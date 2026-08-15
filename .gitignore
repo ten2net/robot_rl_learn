@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+
+# uv
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# 训练产物
+runs/
+logs/
+checkpoints/
+*.zip
+*.ckpt
+*.pt
+
+# TensorBoard
+events.out.tfevents.*
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

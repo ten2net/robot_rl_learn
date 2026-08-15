@@ -1,0 +1,75 @@
+[project]
+name = "robot-rl-learn"
+version = "0.1.0"
+description = "12 个月机器人强化学习/模仿学习自学工程：SB3 → MotrixLab → ROS2 Jazzy → Isaac Lab"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+authors = [{ name = "robot_rl_learn student" }]
+dependencies = [
+    # ---- 核心：强化学习与仿真 ----
+    "gymnasium[classic-control]>=0.29,<1.0",  # imitation 1.0 要求 gymnasium<1.0
+    "stable-baselines3[extra]>=2.4",
+    "torch>=2.2",
+    # ---- 模仿学习 ----
+    "imitation>=1.0",
+    # ---- 数据与可视化 ----
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "tensorboard>=2.16",
+    "tqdm>=4.66",
+    "pyyaml>=6.0",
+    # ---- Jupyter ----
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+    "ipywidgets>=8.1",
+    "nbconvert>=7.16",
+]
+
+[project.optional-dependencies]
+# 阶段二（M5-M6）：MotrixSim / MotrixLab —— 见 docs/phase2_motrixlab.md 的安装说明
+motrix = [
+    "motrixsim>=0.1; python_version < '3.13'",
+]
+# 阶段三（M7-M9）：ROS2 Jazzy 不能通过 pip 安装，需要 Ubuntu 24.04 + apt
+# 该 extra 仅包含在 ROS2 环境中有用的纯 Python 工具
+ros = [
+    "transforms3d>=0.4",
+]
+# 阶段四（M10-M12）：Isaac Lab 需要 NVIDIA GPU + Isaac Sim（pip: isaacsim）
+# 见 docs/phase4_isaac.md 的安装说明
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "pytest>=8.3",
+    "nbstripout>=0.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/robot_rl_learn"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+mypy_path = "src"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
