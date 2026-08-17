@@ -1,11 +1,38 @@
 # 12 个月学习路线总纲
 
-> 主线：**Stable Baselines3 打算法基础 → MotrixLab 建立国产 Sim2Real 能力 →
-> ROS2 Jazzy 掌握机器人中间件 → Isaac Lab/OpenUSD 选修前沿**
+> 主线：**Python 工程与科学计算基础（学前）→ Stable Baselines3 打算法基础 →
+> MotrixLab 建立国产 Sim2Real 能力 → ROS2 Jazzy 掌握机器人中间件 →
+> Isaac Lab/OpenUSD 选修前沿**
 >
-> 节奏假设：每周 6–10 小时，共 48 周；每周 1 个 notebook + 1 组练习。
+> 节奏假设：每周 6–10 小时；学前基础 4 周 + 主线 48 周，每周 1 个 notebook + 1 组练习。
 > 能力对标：机器人 RL/IL 方向**中级工程师**——能独立完成
 > 「建模环境 → 训练策略 → Sim2Real 加固 → 接入 ROS2 系统」全流程。
+
+---
+
+## 阶段〇（学前 4 周）：Python 工程与科学计算基础
+
+目标：Python 小白补基础——熟练工程环境与核心库，用自动化专业熟悉的例子
+（信号、ODE、PID）练习科学计算与数值模拟，为主线课程扫清语言与工具障碍。
+目录：`notebooks/00_basic/`。
+
+| 周 | 主题 | Notebook | 练习重点 |
+|----|------|----------|----------|
+| B01 | Python 环境与语法基础 | `01_python_basics.ipynb` | uv/Jupyter 使用；变量/类型/控制流/函数 |
+| B02 | 数据结构与文件 | `02_data_structures.ipynb` | list/dict/推导式；读写 CSV/JSON；异常处理 |
+| B03 | NumPy 数值计算 | `03_numpy.ipynb` | 向量化思维；广播；矩阵运算（对应线性代数） |
+| B04 | Pandas 与 Matplotlib | `04_pandas_matplotlib.ipynb` | 数据分析流水线；规范出图（对应实验报告） |
+| B05 | SciPy 科学计算与数值模拟 | `05_scipy_simulation.ipynb` | ODE 求解（RL 电路/弹簧/单摆）；插值与拟合 |
+| B06 | Plotly 交互式图表 | `06_plotly.ipynb` | 交互折线/3D 曲面/动画；动态系统可视化 |
+| B07 | Streamlit 交互应用 | `07_streamlit.ipynb` | 把仿真做成可调参的 Web App（PID 调参面板） |
+| B08 | 基础项目：控制系统仿真工作台 | `08_project_control_sim.ipynb` | 端到端：建模→数值仿真→可视化→交互部署 |
+
+**核心资源**
+
+- [Python 官方教程（中文）](https://docs.python.org/zh-cn/3/tutorial/)
+- [NumPy 官方入门](https://numpy.org/doc/stable/user/absolute_beginners.html)、[SciPy 教程](https://docs.scipy.org/doc/scipy/tutorial/)、[Pandas 10 minutes](https://pandas.pydata.org/docs/user_guide/10min.html)
+- [Plotly Python 文档](https://plotly.com/python/)、[Streamlit 文档](https://docs.streamlit.io/)
+- 中文书：《利用 Python 进行数据分析》（Wes McKinney，第 3 版）
 
 ---
 

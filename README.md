@@ -8,6 +8,7 @@
 
 | 阶段 | 月份 | 主题 | 目标 |
 |------|------|------|------|
+| 〇（学前） | 4 周 | **Python 工程与科学计算基础** | 补齐语言/NumPy/SciPy/Plotly/Streamlit 功底 |
 | 一 | M1–M4 | **Stable Baselines3 算法基础** | 吃透 RL 数学基础与主流算法，能独立实现/调参/评估 |
 | 二 | M5–M6 | **MotrixLab 国产 Sim2Real** | 在国产仿真器上做域随机化与 Sim2Real 迁移训练 |
 | 三 | M7–M9 | **ROS2 Jazzy 机器人中间件** | 掌握节点/话题/TF2/ros2_control/Nav2，打通仿真到系统 |
@@ -25,7 +26,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # 2. 安装依赖（uv 自动创建 .venv 并锁定版本）
 uv sync
 
-# 3. 启动 JupyterLab，从 notebooks/01_phase1_sb3/ 开始
+# 3. 启动 JupyterLab；Python 基础较弱请从 notebooks/00_basic/ 开始，
+#    否则直接从 notebooks/01_phase1_sb3/ 开始
 uv run jupyter lab
 
 # 4. 运行测试 / 代码检查
@@ -45,6 +47,7 @@ robot_rl_learn/
 │   ├── common/             # 路径管理等跨阶段工具
 │   └── phase1_sb3/         # 阶段一：自定义环境、训练/评估/绘图辅助
 ├── notebooks/              # 课程主体，按阶段分目录
+│   ├── 00_basic/           # 学前：Python 工程与科学计算基础（B01-B08）
 │   ├── 01_phase1_sb3/      # M1-M4：RL 基础 + SB3 + 模仿学习
 │   ├── 02_phase2_motrixlab/# M5-M6：MotrixSim/MotrixLab + Sim2Real
 │   ├── 03_phase3_ros2/     # M7-M9：ROS2 Jazzy
