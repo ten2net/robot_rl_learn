@@ -18,7 +18,7 @@
 
 | 周 | 主题 | Notebook | 练习重点 |
 |----|------|----------|----------|
-| B00 | 命令行速成：Windows 与 Linux 终端 | `00_shell_commands.ipynb` | 目录/文件操作、查日志、跑脚本、重定向管道、进程管理 |
+| B00 | 命令行速成：Windows 与 Linux 终端 | `00_shell_commands.ipynb` | 目录/文件操作、查日志、跑脚本、重定向管道、环境变量与代理、进程管理 |
 | B01 | Python 环境与语法基础 | `01_python_basics.ipynb` | uv/Jupyter 使用；变量/类型/控制流/函数 |
 | B02 | 数据结构与文件 | `02_data_structures.ipynb` | list/dict/推导式；读写 CSV/JSON；异常处理 |
 | B03 | NumPy 数值计算 | `03_numpy.ipynb` | 向量化思维；广播；矩阵运算（对应线性代数） |
