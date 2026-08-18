@@ -10,7 +10,32 @@
 
 ---
 
-## 阶段〇（学前 4 周）：Python 工程与科学计算基础
+## 开始前：30 秒自检清单（这门课不适合谁？）
+
+本课程默认的起步能力是「会基本电脑操作 + 高中数学」。用下面 5 道题定位你的入口周，
+**从第一题开始，答「不会」就停在那一行**——那就是你的起点，前面的周次全部跳过：
+
+| # | 自检问题 | 不会？从这里开始 | 会？ |
+|---|----------|------------------|------|
+| 1 | 你会安装软件，并用 Git 把代码仓库 clone 到本地、提交一次修改吗？ | **B-2**（Git 准备周） | 下一题 |
+| 2 | 你会在终端里 `cd` 进目录、运行 `python xxx.py`、查看文本文件吗？ | **B00**（命令行速成） | 下一题 |
+| 3 | 给你一段报错的 Python 代码，你能从 traceback 里找到出错行号和错误类型吗？ | **B-1**（读报错练习） | 下一题 |
+| 4 | 你能用 Python 写出变量/循环/函数，并用 NumPy 做矩阵乘法吗？ | **B01**（Python 基础，学前 4 周从头学） | 下一题 |
+| 5 | 你知道随机变量的「期望」是什么、会手算离散分布的期望吗？ | 先补概率直觉（见下方资源），再进 **W01** | **跳过阶段〇，直接从 W01 开始** |
+
+第 5 题答「不会」的补课资源（不必全看完，够用即可）：
+
+- [3Blue1Brown《线性代数的本质》](https://www.bilibili.com/video/BV1ys411472E)（对应 B03/W01 的矩阵直觉）
+- [可汗学院：概率与统计（中文）](https://zh.khanacademy.org/math/statistics-probability)（重点看「随机变量与期望」）
+- 微积分只需要「导数是变化率」的直觉，W04 用到链式法则时再回看即可
+
+**明确不适合直接开始的情况**：完全没碰过电脑编程且无人可问的高中生——
+请先完成 B-2 → B00 → B-1 → B01 这条「学前缓冲带」（约 2–3 周），再评估是否继续；
+阶段二起的 MotrixLab/ROS2/Isaac 需要按 `docs/phaseN_*.md` 额外安装环境，零基础学员请到达该阶段时再处理。
+
+---
+
+## 阶段〇（学前 4 周，零基础放宽到 6–8 周）：Python 工程与科学计算基础
 
 目标：Python 小白补基础——熟练工程环境与核心库，用自动化专业熟悉的例子
 （信号、ODE、PID）练习科学计算与数值模拟，为主线课程扫清语言与工具障碍。
@@ -18,15 +43,17 @@
 
 | 周 | 主题 | Notebook | 练习重点 |
 |----|------|----------|----------|
-| B00 | 命令行速成：Windows 与 Linux 终端 | `00_shell_commands.ipynb` | 目录/文件操作、查日志、跑脚本、重定向管道、环境变量与代理、进程管理 |
-| B01 | Python 环境与语法基础 | `01_python_basics.ipynb` | uv/Jupyter 使用；变量/类型/控制流/函数 |
-| B02 | 数据结构与文件 | `02_data_structures.ipynb` | list/dict/推导式；读写 CSV/JSON；异常处理 |
-| B03 | NumPy 数值计算 | `03_numpy.ipynb` | 向量化思维；广播；矩阵运算（对应线性代数） |
-| B04 | Pandas 与 Matplotlib | `04_pandas_matplotlib.ipynb` | 数据分析流水线；规范出图（对应实验报告） |
-| B05 | SciPy 科学计算与数值模拟 | `05_scipy_simulation.ipynb` | ODE 求解（RL 电路/弹簧/单摆）；插值与拟合 |
-| B06 | Plotly 交互式图表 | `06_plotly.ipynb` | 交互折线/3D 曲面/动画；动态系统可视化 |
-| B07 | Streamlit 交互应用 | `07_streamlit.ipynb` | 把仿真做成可调参的 Web App（PID 调参面板） |
-| B08 | 基础项目：控制系统仿真工作台 | `08_project_control_sim.ipynb` | 端到端：建模→数值仿真→可视化→交互部署 |
+| B-2 | 学习准备：装环境 + Git 最小六命令 | `00_git_setup.ipynb` | clone/status/add/commit/push/pull；故意制造并解决一次冲突 |
+| B-1 | 读报错与提问 | `02_read_errors.ipynb` | 读懂 5 类 traceback；按模板写出合格提问 |
+| B00 | 命令行速成：Windows 与 Linux 终端 | `01_shell_commands.ipynb` | 目录/文件操作、查日志、跑脚本、重定向管道、环境变量与代理、进程管理 |
+| B01 | Python 环境与语法基础 | `03_python_basics.ipynb` | uv/Jupyter 使用；变量/类型/控制流/函数 |
+| B02 | 数据结构与文件 | `04_data_structures.ipynb` | list/dict/推导式；读写 CSV/JSON；异常处理 |
+| B03 | NumPy 数值计算 | `05_numpy.ipynb` | 向量化思维；广播；矩阵运算（对应线性代数） |
+| B04 | Pandas 与 Matplotlib | `06_pandas_matplotlib.ipynb` | 数据分析流水线；规范出图（对应实验报告） |
+| B05 | SciPy 科学计算与数值模拟 | `07_scipy_simulation.ipynb` | ODE 求解（RL 电路/弹簧/单摆）；插值与拟合 |
+| B06 | Plotly 交互式图表 | `08_plotly.ipynb` | 交互折线/3D 曲面/动画；动态系统可视化 |
+| B07 | Streamlit 交互应用 | `09_streamlit.ipynb` | 把仿真做成可调参的 Web App（PID 调参面板） |
+| B08 | 基础项目：控制系统仿真工作台 | `10_project_control_sim.ipynb` | 端到端：建模→数值仿真→可视化→交互部署 |
 
 **核心资源**
 

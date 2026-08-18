@@ -1,6 +1,6 @@
 # 阶段〇（学前基础）：Python 工程与科学计算
 
-> 对应 `docs/learning_path.md` 的「阶段〇（学前 4 周）」表格（B00–B08）。
+> 对应 `docs/learning_path.md` 的「阶段〇（学前 4 周）」表格（B-2–B08）。
 > 用自动化专业熟悉的例子（信号、电路、弹簧、单摆、PID、阶跃响应）学习 Python 科学生态，
 > 为后续 SB3 → MotrixLab → ROS2 → Isaac 主线扫清语言与工具障碍。
 
@@ -17,15 +17,17 @@
 
 | 周 | Notebook | 主题 | 你将做出什么 |
 |----|----------|------|-------------|
-| B00 | `00_shell_commands.ipynb` | 命令行速成（Windows CMD / Linux bash 对照） | 终端认路、文件操作、查日志、跑脚本、环境变量与代理、进程管理 |
-| B01 | `01_python_basics.ipynb` | uv/Jupyter 环境、变量/类型/控制流/函数、列表切片 | 手写欧拉法仿真一阶环节并测调节时间 |
-| B02 | `02_data_structures.ipynb` | list/tuple/dict/set、推导式、文件读写、异常、模块化 | 仿真结果存 CSV、参数存 JSON、自写 `.py` 模块 |
-| B03 | `03_numpy.ipynb` | ndarray、广播、向量化实测、统计与线代、随机种子 | timeit 实测向量化加速；`eigvals` 判稳定性 |
-| B04 | `04_pandas_matplotlib.ipynb` | DataFrame 分析流水线、规范出图 | 温度传感器数据分析 + 报告级双子图（存 PNG） |
-| B05 | `05_scipy_simulation.ipynb` | **重点课**：solve_ivp 求 ODE、插值、拟合 | 一阶环节/RLC/弹簧阻尼/单摆仿真；curve_fit 辨识参数 |
-| B06 | `06_plotly.ipynb` | 交互折线/子图/3D 曲面/动画滑块、HTML 导出 | 根轨迹风格极点图、正弦相位动画 |
-| B07 | `07_streamlit.ipynb` | Streamlit 心智模型、widget、session_state | 生成 PID 调参面板 app.py + headless 冒烟测试 |
-| B08 | `08_project_control_sim.ipynb` | 综合项目：控制系统仿真工作台 | P/PI/PID 对比 + 指标表 + 报告图 + 部署指引 + 自评量表 |
+| B-2 | `00_git_setup.ipynb` | 学习准备周：装环境 + Git 最小六命令 | 装好 VS Code/Git/uv 并验证；本地仓库提交/推送/解决冲突 |
+| B-1 | `02_read_errors.ipynb` | 读报错与提问：自学者的保命技能 | 读懂 5 类常见 traceback；写出合格的提问帖 |
+| B00 | `01_shell_commands.ipynb` | 命令行速成（Windows CMD / Linux bash 对照） | 终端认路、文件操作、查日志、跑脚本、环境变量与代理、进程管理 |
+| B01 | `03_python_basics.ipynb` | uv/Jupyter 环境、变量/类型/控制流/函数、列表切片 | 手写欧拉法仿真一阶环节并测调节时间 |
+| B02 | `04_data_structures.ipynb` | list/tuple/dict/set、推导式、文件读写、异常、模块化 | 仿真结果存 CSV、参数存 JSON、自写 `.py` 模块 |
+| B03 | `05_numpy.ipynb` | ndarray、广播、向量化实测、统计与线代、随机种子 | timeit 实测向量化加速；`eigvals` 判稳定性 |
+| B04 | `06_pandas_matplotlib.ipynb` | DataFrame 分析流水线、规范出图 | 温度传感器数据分析 + 报告级双子图（存 PNG） |
+| B05 | `07_scipy_simulation.ipynb` | **重点课**：solve_ivp 求 ODE、插值、拟合 | 一阶环节/RLC/弹簧阻尼/单摆仿真；curve_fit 辨识参数 |
+| B06 | `08_plotly.ipynb` | 交互折线/子图/3D 曲面/动画滑块、HTML 导出 | 根轨迹风格极点图、正弦相位动画 |
+| B07 | `09_streamlit.ipynb` | Streamlit 心智模型、widget、session_state | 生成 PID 调参面板 app.py + headless 冒烟测试 |
+| B08 | `10_project_control_sim.ipynb` | 综合项目：控制系统仿真工作台 | P/PI/PID 对比 + 指标表 + 报告图 + 部署指引 + 自评量表 |
 
 ## 与后续阶段的衔接
 
