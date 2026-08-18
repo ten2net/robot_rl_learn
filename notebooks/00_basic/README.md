@@ -1,6 +1,6 @@
 # 阶段〇（学前基础）：Python 工程与科学计算
 
-> 对应 `docs/learning_path.md` 的「阶段〇（学前 4 周）」表格（B01–B08）。
+> 对应 `docs/learning_path.md` 的「阶段〇（学前 4 周）」表格（B00–B08）。
 > 用自动化专业熟悉的例子（信号、电路、弹簧、单摆、PID、阶跃响应）学习 Python 科学生态，
 > 为后续 SB3 → MotrixLab → ROS2 → Isaac 主线扫清语言与工具障碍。
 
@@ -17,6 +17,7 @@
 
 | 周 | Notebook | 主题 | 你将做出什么 |
 |----|----------|------|-------------|
+| B00 | `00_shell_commands.ipynb` | 命令行速成（Windows CMD / Linux bash 对照） | 终端认路、文件操作、查日志、跑脚本、进程管理 |
 | B01 | `01_python_basics.ipynb` | uv/Jupyter 环境、变量/类型/控制流/函数、列表切片 | 手写欧拉法仿真一阶环节并测调节时间 |
 | B02 | `02_data_structures.ipynb` | list/tuple/dict/set、推导式、文件读写、异常、模块化 | 仿真结果存 CSV、参数存 JSON、自写 `.py` 模块 |
 | B03 | `03_numpy.ipynb` | ndarray、广播、向量化实测、统计与线代、随机种子 | timeit 实测向量化加速；`eigvals` 判稳定性 |
