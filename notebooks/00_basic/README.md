@@ -18,6 +18,7 @@
 | 周 | Notebook | 主题 | 你将做出什么 |
 |----|----------|------|-------------|
 | B-2 | `00_git_setup.ipynb` | 学习准备周：装环境 + Git 最小六命令 | 装好 VS Code/Git/uv 并验证；本地仓库提交/推送/解决冲突 |
+| 彩蛋 | `11_quickwin_cartpole.ipynb` | 先看终点：训练好的 AI 平衡倒立摆 | 无需基础；加载 PPO 专家跑满分并渲染 GIF |
 | B-1 | `02_read_errors.ipynb` | 读报错与提问：自学者的保命技能 | 读懂 5 类常见 traceback；写出合格的提问帖 |
 | B00 | `01_shell_commands.ipynb` | 命令行速成（Windows CMD / Linux bash 对照） | 终端认路、文件操作、查日志、跑脚本、环境变量与代理、进程管理 |
 | B01 | `03_python_basics.ipynb` | uv/Jupyter 环境、变量/类型/控制流/函数、列表切片 | 手写欧拉法仿真一阶环节并测调节时间 |
